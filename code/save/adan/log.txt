@@ -1,0 +1,52 @@
+Training ADAN with options:
+Namespace(F_bn=False, F_layers=1, P_bn=True, P_layers=2, Q_bn=True, Q_layers=2, Q_learning_rate=0.0005, attn='dot', batch_size=100, bdrnn=True, ch_train_lines=0, clip_lower=-0.01, clip_upper=0.01, debug=False, device='cpu', dropout=0.2, emb_filename='../data/bwe/Stanford_BWE.txt', emb_size=50, en_train_lines=0, fix_emb=False, fix_unk=False, hidden_size=900, kernel_num=400, kernel_sizes=[3, 4, 5], lambd=0.01, learning_rate=0.0005, max_epoch=30, max_seq_len=0, model='cnn', model_save_file='./save/adan', n_critic=5, random_emb=False, random_seed=1, src_data_dir='../data/yelp-700k/', sum_pooling=False, tgt_data_dir='../data/hotel-170k/')
+Loading Embeddings...
+Loading data...
+Done loading datasets.
+Training ADAN with options:
+Namespace(F_bn=False, F_layers=1, P_bn=True, P_layers=2, Q_bn=True, Q_layers=2, Q_learning_rate=0.0005, attn='dot', batch_size=100, bdrnn=True, ch_train_lines=0, clip_lower=-0.01, clip_upper=0.01, debug=False, device='cuda', dropout=0.2, emb_filename='../data/bwe/Stanford_BWE.txt', emb_size=50, en_train_lines=0, fix_emb=False, fix_unk=False, hidden_size=900, kernel_num=400, kernel_sizes=[3, 4, 5], lambd=0.01, learning_rate=0.0005, max_epoch=30, max_seq_len=0, model='cnn', model_save_file='./save/adan', n_critic=5, random_emb=False, random_seed=1, src_data_dir='../data/yelp-700k/', sum_pooling=False, tgt_data_dir='../data/hotel-170k/')
+Loading Embeddings...
+Loading data...
+Done loading datasets.
+Ending epoch 1
+Average English Q output: 0.012135785620245343
+Average Foreign Q output: 0.009979190180814676
+Training Accuracy: 57.49661538461538%
+Evaluating English Validation set:
+Accuracy on 50000 samples: 62.702000000000005%
+Evaluating Foreign validation set:
+Accuracy on 10000 samples: 43.59%
+New Best Foreign validation accuracy: 0.4359
+Evaluating Foreign test set:
+Accuracy on 10000 samples: 44.230000000000004%
+Ending epoch 2
+Average English Q output: 0.012359745794146197
+Average Foreign Q output: 0.011495045782588812
+Training Accuracy: 63.75092307692308%
+Evaluating English Validation set:
+Accuracy on 50000 samples: 63.78%
+Evaluating Foreign validation set:
+Accuracy on 10000 samples: 43.96%
+New Best Foreign validation accuracy: 0.4396
+Evaluating Foreign test set:
+Accuracy on 10000 samples: 44.49%
+Ending epoch 3
+Average English Q output: 0.01631981876930292
+Average Foreign Q output: 0.015293167593292509
+Training Accuracy: 66.3003076923077%
+Evaluating English Validation set:
+Accuracy on 50000 samples: 64.7%
+Evaluating Foreign validation set:
+Accuracy on 10000 samples: 43.96%
+Evaluating Foreign test set:
+Accuracy on 10000 samples: 44.03%
+Ending epoch 4
+Average English Q output: 0.016882976908943133
+Average Foreign Q output: 0.015836490665226556
+Training Accuracy: 68.31030769230769%
+Evaluating English Validation set:
+Accuracy on 50000 samples: 63.970000000000006%
+Evaluating Foreign validation set:
+Accuracy on 10000 samples: 42.83%
+Evaluating Foreign test set:
+Accuracy on 10000 samples: 42.51%
