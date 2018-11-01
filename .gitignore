@@ -1,2 +1,8 @@
 __pycache__/
 *.py[cod]
+
+#data
+./data/*
+
+#models
+*.pth
